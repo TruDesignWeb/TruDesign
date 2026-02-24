@@ -17,6 +17,16 @@ export default function TrudesignHome() {
 
     window.addEventListener("mousemove", handleMouse);
     window.addEventListener("scroll", handleScroll);
+
+    // LiveAgent chat button
+    if (!document.getElementById('la_x2s6df8d')) {
+      const s = document.createElement('script');
+      s.id = 'la_x2s6df8d';
+      s.defer = true;
+      s.src = 'https://trudesign.ladesk.com/scripts/track.js';
+      s.onload = () => { (window as any).LiveAgent?.createButton('t7pnlaks', s); };
+      document.body.appendChild(s);
+    }
     return () => {
       window.removeEventListener("mousemove", handleMouse);
       window.removeEventListener("scroll", handleScroll);
@@ -36,6 +46,8 @@ export default function TrudesignHome() {
     { num: "03", title: "Motion & Interaction", desc: "Micro-interactions and transitions that make digital products feel alive and responsive." },
     { num: "04", title: "Digital Strategy", desc: "Research-backed positioning to ensure your brand occupies the right space in the market." },
   ];
+
+
 
   return (
     <div className="app">
