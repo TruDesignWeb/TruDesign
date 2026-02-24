@@ -34,16 +34,16 @@ export default function TrudesignHome() {
   }, []);
 
   const projects = [
-    { id: "01", name: "Aether Platform", tag: "SaaS / UI System", year: "2024" },
-    { id: "02", name: "Vanta Commerce", tag: "E-Commerce / Brand", year: "2024" },
-    { id: "03", name: "Solace Health", tag: "Web App / Identity", year: "2023" },
-    { id: "04", name: "Nexus Finance", tag: "Dashboard / UX", year: "2023" },
+    { id: "01", name: "Own Aesthetics", tag: "UI System / Clean Web App", year: "2025", link: "https://ownaesthetics.com" },
+    { id: "02", name: "Total Health", tag: "Brand / UI + Backend UX", year: "2025", link: "https://totalhealthrepo.vercel.app" },
+    { id: "03", name: "The Move", tag: "React App / Social Connection", year: "2025" },
+    { id: "04", name: "CyAI", tag: "Dashboard / UX", year: "2026", link: "https://github.com/Truman-Folkers/ISUAIProject" },
   ];
 
   const services = [
-    { num: "01", title: "Brand Identity", desc: "Visual systems that outlast trends — logos, palettes, and type hierarchies built for longevity." },
+    { num: "01", title: "IT Consulting", desc: "Streamlining your daily processes for maximum efficiency and productivity." },
     { num: "02", title: "Web Design", desc: "Pixel-perfect interfaces engineered for engagement, conversion, and pure aesthetic delight." },
-    { num: "03", title: "Motion & Interaction", desc: "Micro-interactions and transitions that make digital products feel alive and responsive." },
+    { num: "03", title: "App Design", desc: "Micro-interactions and transitions that make apps feel alive and responsive." },
     { num: "04", title: "Digital Strategy", desc: "Research-backed positioning to ensure your brand occupies the right space in the market." },
   ];
 
@@ -79,7 +79,7 @@ export default function TrudesignHome() {
         <div className="hero-orb orb2" />
         <div className="scroll-line" />
 
-        <div className="hero-eyebrow">— Digital Design Studio — Est. 2019</div>
+        <div className="hero-eyebrow">— Digital Design Studio — Est. 2025</div>
 
         <h1 className="hero-headline">
           We build<br />
@@ -94,11 +94,11 @@ export default function TrudesignHome() {
           </p>
           <div className="hero-stats">
             <div className="stat-item">
-              <div className="stat-num">87+</div>
+              <div className="stat-num">5+</div>
               <div className="stat-label">Projects</div>
             </div>
             <div className="stat-item">
-              <div className="stat-num">6yr</div>
+              <div className="stat-num">4yr</div>
               <div className="stat-label">Experience</div>
             </div>
             <div className="stat-item">
@@ -133,6 +133,7 @@ export default function TrudesignHome() {
         </div>
         <div className="projects-grid">
           {projects.map((p, i) => (
+            <a href ={`${p.link}`} className="service-link">
             <div className="project-card" key={p.id}>
               <div className={`project-visual pv${i + 1}`}>
                 <div className="project-visual-inner">
@@ -147,6 +148,7 @@ export default function TrudesignHome() {
               <div className="project-tag">{p.tag}</div>
               <div className="project-arrow">↗</div>
             </div>
+            </a>
           ))}
         </div>
       </section>
@@ -179,7 +181,7 @@ export default function TrudesignHome() {
         </div>
         <div className="about-right">
           <p className="about-body">
-            We're a boutique studio that obsesses over the intersection of aesthetics and performance. Every pixel serves a purpose. Every interaction has intention. We partner with startups and scale-ups who refuse to be invisible.
+            We are a digital design studio focused on crafting high-performance products and apps. With a blend of creativity, strategy, and technical expertise, we help businesses connect with their audiences through compelling digital experiences.
           </p>
           <div className="about-tags">
             {["Figma", "React", "Next.js", "Framer", "Three.js", "GSAP", "Webflow", "Branding"].map((t) => (
@@ -197,9 +199,11 @@ export default function TrudesignHome() {
           build something<br />
           <span className="dim">extraordinary?</span>
         </h2>
+        <a href = "mailto:trudesignweb@gmail.com">
         <button className="cta-btn">
           Let's talk <span className="cta-btn-arrow">→</span>
         </button>
+        </a>
       </section>
       </div>
 
