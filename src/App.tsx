@@ -34,7 +34,7 @@ export default function TrudesignHome() {
   }, []);
 
   const projects = [
-    { id: "01", name: "Own Aesthetics", tag: "UI System / Clean Web App", year: "2025", link: "https://ownaesthetics.com" },
+    { id: "01", name: "Own Aesthetics", tag: "UI System / Clean Web App", year: "2025", link: "https://ownaesthetics.vercel.app" },
     { id: "02", name: "Total Health", tag: "Brand / UI + Backend UX", year: "2025", link: "https://totalhealthrepo.vercel.app" },
     { id: "03", name: "The Move", tag: "React App / Social Connection", year: "2025" },
     { id: "04", name: "CyAI", tag: "Dashboard / UX", year: "2026", link: "https://github.com/Truman-Folkers/ISUAIProject" },
