@@ -610,3 +610,98 @@
     opacity: 0.025;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   }
+
+  /* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
+/* ── TABLET (≤900px) ── */
+@media (max-width: 900px) {
+  .nav { padding: 24px 32px; }
+  .nav-links { display: none; }
+
+  .hero { padding: 0 32px 64px; }
+  .hero-headline { letter-spacing: -2px; }
+  .hero-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 48px;
+  }
+  .hero-stats { align-self: flex-start; gap: 40px; }
+  .stat-item { text-align: left; }
+
+  section { padding: 100px 32px; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+  .work-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  .services-grid { grid-template-columns: 1fr; }
+
+  .about-strip {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 100px 32px;
+  }
+
+  .cta-section { padding: 100px 32px; }
+
+  footer {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+    padding: 48px 32px;
+  }
+  .footer-links { flex-wrap: wrap; justify-content: center; }
+}
+
+/* ── MOBILE (≤600px) ── */
+@media (max-width: 600px) {
+  .nav { padding: 20px 24px; }
+  .nav-cta { display: none; }
+
+  .hero { padding: 0 24px 56px; min-height: 100svh; }
+  .hero-headline { letter-spacing: -1.5px; }
+  .hero-eyebrow { font-size: 10px; }
+  .hero-desc { font-size: 13px; }
+  .hero-stats { gap: 28px; }
+  .stat-num { font-size: 36px; }
+  .scroll-line { display: none; }
+
+  section { padding: 80px 24px; }
+  .section-label { margin-bottom: 40px; }
+
+  .project-card { padding: 32px 24px; }
+  .project-visual { height: 160px; }
+  .project-name { font-size: 22px; }
+  .project-arrow { bottom: 32px; right: 24px; }
+
+  .service-item { padding: 40px 24px; }
+  .service-title { font-size: 26px; }
+  .service-desc { max-width: 100%; }
+
+  .about-strip { padding: 80px 24px; gap: 40px; }
+  .about-title { letter-spacing: -1.5px; }
+  .about-body { font-size: 13px; }
+
+  .cta-section { padding: 80px 24px; }
+  .cta-title { letter-spacing: -2px; }
+  .cta-btn {
+    font-size: 16px;
+    padding: 16px 32px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  footer { padding: 40px 24px; gap: 24px; }
+
+  /* Hide custom cursor on touch — restore default */
+  .cursor, .cursor-ring { display: none; }
+  body { cursor: auto; }
+  button, a { cursor: pointer; }
+}

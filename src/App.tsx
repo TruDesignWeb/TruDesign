@@ -83,7 +83,7 @@ export default function TrudesignHome() {
 
         <h1 className="hero-headline">
           We build<br />
-          <span className="outline">digital</span>{" "}
+          <span className="outline">Hi Charlotte!</span>{" "}
           <span className="accent">spaces</span><br />
           that convert.
         </h1>
